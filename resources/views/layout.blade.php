@@ -26,12 +26,12 @@
             color: #636b6f;
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
-            height: 100vh;
+            height: 100%;
             margin: 0;
         }
 
         .full-height {
-            height: 65vh;
+            height: 100%;
         }
 
         .flex-center {
@@ -74,17 +74,16 @@
     </style>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-        <div class="top-right links">
-            <a href="{{ url('') }}">Home</a>
-        </div>
-
-    <div class="content">
-        @yield('main-content')
+<div class="position-ref">
+    <div class="top-right links">
+        <a href="{{ url('') }}">Home</a>
     </div>
-
 </div>
+@yield('main-content')
 
 @extends('footer')
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>

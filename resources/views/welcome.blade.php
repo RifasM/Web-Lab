@@ -3,6 +3,9 @@
 @section('title', 'Homepage')
 
 @section('main-content')
+
+
+        <div class="content">
     <div class="title m-b-md">
         Web Lab 7th Sem Built on Laravel
     </div>
@@ -24,7 +27,7 @@
     </div>
 
     <div class="links">
-        <a href="">Program 1</a>
+        <a href="{{ url('program1')  }}">Program 1</a>
         <!--a href="https://laravel.com/docs">Docs</a>
         <a href="https://laracasts.com">Laracasts</a>
         <a href="https://laravel-news.com">News</a>
@@ -34,4 +37,6 @@
         <a href="https://vapor.laravel.com">Vapor</a>
         <a href="https://github.com/laravel/laravel">GitHub</a-->
     </div>
+        </div>
+
 @endsection
