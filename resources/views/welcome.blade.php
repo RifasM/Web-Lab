@@ -2,29 +2,19 @@
 
 @section('title', 'Homepage')
 
+
 @section('main-content')
 
-
-        <div class="content">
+<div class="content">
     <div class="title m-b-md">
         Web Lab 7th Sem Built on Laravel
     </div>
 
-    <div class="row content m-b-md">
-        <div class="col-md-4">
-            Mohammed Rifas S
-        </div>
-        <div class="col-md-4">
-            1CR17CS075
-        </div>
-        <div class="col-md-4">
-            Computer Science Engineering
-        </div>
-    </div>
+    @include('identity')
 
-    <div class="content">
+    <h3>
         Program List
-    </div>
+    </h3>
 
     <div class="links">
         <a href="{{ url('program1')  }}">Program 1</a>
@@ -37,6 +27,6 @@
         <a href="https://vapor.laravel.com">Vapor</a>
         <a href="https://github.com/laravel/laravel">GitHub</a-->
     </div>
-        </div>
+</div>
 
 @endsection
