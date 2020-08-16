@@ -12,7 +12,7 @@
                 @include('identity')
             </div>
 
-            <h3 class="content">Simple Calculator Program</h3>
+            <h3 class="content">Simple Calculator</h3>
         </div>
         <!-- Calculator Code Starts -->
         <link href="{{asset('css/calculator.css')}}" rel="stylesheet">
