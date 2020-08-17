@@ -30,11 +30,9 @@
             </form>
             <table class="col-md-8 table table-dark">
                 <thead>
-                <tr>
-                    <td>Number</td>
-                    <td>Square</td>
-                    <td>Cube</td>
-                </tr>
+                <th scope="col">Number</th>
+                <th scope="col">Square</th>
+                <th scope="col">Cube</th>
                 </thead>
                 <tbody id="counter-content">
 
@@ -74,7 +72,19 @@
         <!-- Extra Part Ends -->
 
         <!-- Multiplication Tables Starts-->
-        <div class="row">
+        <div class="row flex-center m-b-md">
+            <div class="title content">Multiplication Tables</div>
+            <form class="col-md-8 m-b-md">
+                <div class="form-group m-b-md" style="text-align: left;">
+                    <label for="tables">Enter Value:</label>
+                    <input type="number" id="tables" class="form-control m-b-md" placeholder="Value" required>
+                </div>
+                <input type="button" class="btn btn-primary m-b-md" value="Calculate"
+                       onclick="
+                               multiply_tables(document.getElementById('tables').value)">
+            </form>
+        </div>
+        <div class="row flex-center m-b-md" id="mult-tables">
 
         </div>
         <!-- Multiplication Tables Ends-->
