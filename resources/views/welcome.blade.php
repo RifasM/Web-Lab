@@ -5,7 +5,7 @@
 
 @section('main-content')
 
-<div class="content">
+<div class="content" style="margin-top: 15%;">
     <div class="title m-b-md">
         Web Lab 7th Sem Built on Laravel
     </div>

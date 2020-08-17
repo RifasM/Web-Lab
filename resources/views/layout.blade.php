@@ -30,10 +30,6 @@
             margin: 0;
         }
 
-        .full-height {
-            height: 100vh;
-        }
-
         .flex-center {
             align-items: center;
             display: flex;
@@ -48,13 +44,17 @@
             position: absolute;
             right: 10px;
             top: 18px;
+            z-index: 1;
         }
+
         .content {
             text-align: center;
         }
+
         .title {
             font-size: 84px;
         }
+
         .links > a {
             color: #636b6f;
             padding: 0 25px;
@@ -71,12 +71,12 @@
     </style>
 </head>
 <body>
-<div class="full-height flex-center position-ref ">
+<div class="flex-center position-ref">
     <div class="top-right links">
         <a href="{{ url('') }}">Home</a>
     </div>
 
-@yield('main-content')
+    @yield('main-content')
 </div>
 
 @extends('footer')

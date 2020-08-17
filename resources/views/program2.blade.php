@@ -37,12 +37,16 @@
 
         <!-- Extra Part Starts -->
         <div class="row flex-center m-b-mb">
-            <div class="content">
-                <h3>Root of Quadratic</h3>
-                <div class="col-md-12" id="extra-answer"></div>
-            </div>
+            <h3>Root of Quadratic</h3>
+            <div class="col-md-12" id="extra-answer"></div>
         </div>
         <!-- Extra Part Ends -->
+
+        <!-- Multiplication Tables Starts-->
+        <div class="row">
+
+        </div>
+        <!-- Multiplication Tables Ends-->
 
         <script src="{{asset('js/counter.js')}}" type="text/javascript"></script>
     </div>
