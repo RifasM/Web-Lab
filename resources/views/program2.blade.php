@@ -73,7 +73,7 @@
 
         <!-- Multiplication Tables Starts-->
         <div class="row flex-center m-b-md">
-            <div class="title content">Multiplication Tables</div>
+            <div class="col-md-6 title content">Multiplication Tables</div>
             <form class="col-md-8 m-b-md">
                 <div class="form-group m-b-md" style="text-align: left;">
                     <label for="tables">Enter Value:</label>

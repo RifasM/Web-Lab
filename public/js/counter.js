@@ -71,6 +71,7 @@ function calc_quad(a, b, c) {
 
 function multiply_tables(n) {
     target = document.getElementById("mult-tables");
+    target.innerHTML = "";
     for (var i = 1; i <= n; i++) {
         var data = "<div class='col-md-3' style='margin-left: 1%; margin-left: 1%;'><table class=\"table table-hover m-b-md\"><thead class=\"thead-dark\"><th scope=\"col\">Table of " + i + "</th></thead><tbody>";
         for (var j = 1; j <= 10; j++) {
