@@ -47,7 +47,7 @@
         <!-- String reverse Program Starts -->
 
         <div class="row flex-center m-b-md">
-            <h3 class="content">4.b Reverse of a number</h3>
+            <h3 class="col-md-8 content">4.b Reverse of a number</h3>
             <form class="col-md-8 m-b-md" onsubmit="reverseNum(document.getElementById('number').value)">
                 <div class="form-group m-b-md" style="text-align: left;">
                     <label for="val">Enter Value:</label>
