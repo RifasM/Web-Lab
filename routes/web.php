@@ -22,3 +22,11 @@ Route::get('/program1', function () {
 Route::get('/program2', function () {
     return view('program2');
 });
+
+Route::get('/program3', function () {
+    return view('program3');
+});
+
+Route::get('/program4', function () {
+    return view('program4');
+});
