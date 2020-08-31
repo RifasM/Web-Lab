@@ -5,7 +5,7 @@
 @section('main-content')
     <div class="content">
         <div class="row flex-center m-b-md">
-            <div class="col-md-12 m-b-md">
+            <div class="col-md-11 m-b-md">
                 <div class="title content">Program 4</div>
                 <h3 class="content m-b-md">Aim: Write a JavaScript that calculates the squares and cubes of the numbers
                     from 0 to 10
@@ -13,7 +13,7 @@
                 @include('identity')
             </div>
 
-            <h3 class="content">Position of left most vowel</h3>
+            <h3 class="content">4.a Position of left most vowel</h3>
         </div>
 
         <!-- Vowel position Program Starts -->
@@ -35,6 +35,7 @@
         <!-- String reverse Program Starts -->
 
         <div class="row flex-center m-b-md">
+            <h3 class="content">4.b Reverse of a number</h3>
             <form class="col-md-8 m-b-md" onsubmit="reverseNum(document.getElementById('number').value)">
                 <div class="form-group m-b-md" style="text-align: left;">
                     <label for="val">Enter Value:</label>

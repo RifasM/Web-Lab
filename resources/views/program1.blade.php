@@ -5,7 +5,7 @@
 @section('main-content')
     <div class="content">
         <div class="row flex-center m-b-mb">
-            <div class="col-md-12 m-b-md">
+            <div class="col-md-11 m-b-md">
                 <div class="title content">Program 1</div>
                 <h3 class="content m-b-md">Aim: Write a JavaScript to design a simple calculator to perform the
                     following operations: sum, product, difference and quotient.</h3>
