@@ -29,7 +29,6 @@
             </form>
             <h3 class="m-b-md col-md-8" id="text"></h3>
         </div>
-
         <!-- Growing Shrinking Program Ends -->
 
         <!-- Extra Program Starts -->
