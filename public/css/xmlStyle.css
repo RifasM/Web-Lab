@@ -1,0 +1,50 @@
+* {
+    display: block;
+}
+
+students {
+    padding-bottom: 1vh;
+}
+
+student-1, student-2, student-3 {
+    margin: 4%;
+    float: left;
+    width: 20%;
+    border: 1px solid;
+    padding: 2%;
+}
+
+student-1 {
+    border: 5px solid darkturquoise;
+}
+
+student-2 {
+    border: 7px solid darkcyan;
+}
+
+student-3 {
+    border: 5px solid darkseagreen;
+}
+
+USN {
+    color: #337FFF;
+}
+
+Name {
+    font-family: Raleway, sans-serif;
+    font-size: 4vh;
+    text-transform: capitalize;
+}
+
+College {
+    text-transform: uppercase;
+}
+
+Branch {
+    color: darkcyan;
+}
+
+YearOfJoining {
+    float: right;
+    font-family: 'Nunito', sans-serif;
+}
