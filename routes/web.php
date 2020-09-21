@@ -30,3 +30,7 @@ Route::get('/program3', function () {
 Route::get('/program4', function () {
     return view('program4');
 });
+
+Route::get('/program5', function () {
+    return view('program5');
+});
