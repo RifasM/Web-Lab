@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!-- Prologue -->
+<?xml-stylesheet type="text/css" href="/css/xmlStyle.css" ?>
+<students>
+    <student-1>
+        <USN>1CR17CS075</USN>
+        <Name>Mohammed Rifas S</Name>
+        <College>CMR Institute of Technology</College>
+        <Branch>CSE</Branch>
+        <YearOfJoining>2017</YearOfJoining>
+    </student-1>
+
+    <student-2>
+        <USN>1CR17CS029</USN>
+        <Name>Burla Sai Teja</Name>
+        <College>CMR Institute of Technology</College>
+        <Branch>CSE</Branch>
+        <YearOfJoining>2017</YearOfJoining>
+    </student-2>
+
+    <student-3>
+        <USN>1CR17EC029</USN>
+        <Name>Anushka Jemima</Name>
+        <College>CMR Institute of Technology</College>
+        <Branch>ECE</Branch>
+        <YearOfJoining>2017</YearOfJoining>
+    </student-3>
+</students>
