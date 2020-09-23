@@ -60,7 +60,7 @@
             <h3 class="m-b-md col-md-8" id="reverse-answer"></h3>
         </div>
 
-        <!-- Vowel position Program Ends -->
+        <!-- String Reverse Program Ends -->
 
         <script src="{{asset('js/reverse.js')}}" type="text/javascript"></script>
     </div>
