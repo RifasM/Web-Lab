@@ -48,7 +48,7 @@
 
         <div class="row flex-center m-b-md">
             <h3 class="col-md-8 content">4.b Reverse of a number</h3>
-            <form class="col-md-8 m-b-md" onsubmit="reverseNum(document.getElementById('number').value)">
+            <form class="col-md-8 m-b-md" onsubmit="reverseNum(document.getElementById('val').value)">
                 <div class="form-group m-b-md" style="text-align: left;">
                     <label for="val">Enter Value:</label>
                     <input type="number" id="val" class="form-control m-b-md" placeholder="Value" required>
@@ -61,6 +61,24 @@
         </div>
 
         <!-- String Reverse Program Ends -->
+
+        <!-- Extra Fibonacci Program Starts -->
+
+        <div class="row flex-center m-b-md">
+            <h3 class="col-md-8 content">Extra Program</h3>
+            <form class="col-md-8 m-b-md" onsubmit="fibonacci(document.getElementById('rev').value)">
+                <div class="form-group m-b-md" style="text-align: left;">
+                    <label for="val">Enter Value:</label>
+                    <input type="number" id="rev" class="form-control m-b-md" placeholder="Value" required>
+                </div>
+                <input type="button" class="btn btn-primary m-b-md" value="Get Fibonacci"
+                       onclick="
+                               fibonacci(document.getElementById('rev').value)">
+            </form>
+            <h3 class="m-b-md col-md-8" id="fib-answer"></h3>
+        </div>
+
+        <!-- Extra Fibonacci Program Ends -->
 
         <script src="{{asset('js/reverse.js')}}" type="text/javascript"></script>
     </div>
