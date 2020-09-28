@@ -33,7 +33,7 @@ function fibonacci(num) {
     if (num === 0)
         ans_div.innerHTML = "<p class='text text-danger'>Enter a value greater than 0</p>";
     else {
-        ans_div.innerHTML = "Fibonacci Series upto " + num + ": ";
+        ans_div.innerHTML = "Fibonacci Series upto " + num + " terms: ";
         if (num === 1)
             ans_div.innerHTML += num1;
         else if (num === 2)
