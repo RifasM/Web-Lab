@@ -48,10 +48,41 @@
 
             file_put_contents($file, $count + 1);
 
-            echo "<h3 class=\"col-md-8 content\">Visitor Count: " . $count . "</h3>"
+            echo "<h3 class=\"col-md-8 content\">Visitor Count: " . $count . "</h3>";
             ?>
         </div>
         <!-- PHP visitor Program Ends -->
+
+        <hr>
+
+        <!-- Extra Program Starts -->
+        <h3 class="content m-b-md">File Operations</h3>
+        <div class="row flex-center m-b-md">
+
+            <?php
+            $infile = "raw/program6_input.txt";
+
+            $data = strval(file_get_contents($infile));
+            ?>
+            <div class="col-md-11 m-b-md">
+                <?php
+                echo "<h4 class=\"content\">Initial Contents of Input File:</h4>";
+                echo "<p class=\"content m-b-mb\"><code>" . $data . "</code></p>";
+                ?>
+            </div>
+            <div class="col-md-11 m-b-md">
+                <?php
+                $len = strlen($data);
+                $rev = strrev($data);
+
+                echo "<h5 class=\"content\">Input file content length: <strong>" . $len . "</strong></h5>";
+                echo "<p class=\"content m-b-mb\"> Reversed Contents: <br><code>" . $rev . "</code></p>";
+
+                file_put_contents($infile, $len . "\n" . $rev)
+                ?>
+            </div>
+        </div>
+        <!-- Extra Program Ends -->
 
     </div>
 
