@@ -48,3 +48,50 @@ YearOfJoining {
     float: right;
     font-family: 'Nunito', sans-serif;
 }
+
+/* Extra Program CSS Starts */
+passengers {
+    padding-bottom: 1vh;
+}
+
+passenger-1, passenger-2, passenger-3 {
+    margin: 4%;
+    float: left;
+    width: 20%;
+    border: 1px solid;
+    padding: 2%;
+}
+
+passenger-1 {
+    border: 5px solid darkcyan;
+}
+
+passenger-2 {
+    border: 7px solid darkturquoise;
+}
+
+passenger-3 {
+    border: 5px solid darkgoldenrod;
+}
+
+Airlines {
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+Passport {
+    font-size: 5vh;
+    font-family: 'cursive', sans-serif;
+    margin-bottom: 7%;
+}
+
+Visa {
+    color: darkcyan;
+}
+
+Address {
+    float: right;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Extra Program CSS Ends */

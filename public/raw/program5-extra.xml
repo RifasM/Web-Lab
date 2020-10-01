@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="/css/xmlStyle.css" ?>
+<passengers>
+    <passenger-1>
+        <Name>Mohammed Rifas S</Name>
+        <Airlines>Emirates</Airlines>
+        <Passport>0310991234</Passport>
+        <Visa>R0310991</Visa>
+        <Address>Kerala</Address>
+    </passenger-1>
+
+    <passenger-2>
+        <Name>Burla Sai Teja</Name>
+        <Airlines>Kingfisher</Airlines>
+        <Passport>1406001234</Passport>
+        <Visa>T1406001</Visa>
+        <Address>Andhra Pradesh</Address>
+    </passenger-2>
+
+    <passenger-3>
+        <Name>Anushka Jemima</Name>
+        <Airlines>British Airways</Airlines>
+        <Passport>0906991234</Passport>
+        <Visa>A0909991</Visa>
+        <Address>Coimbatore</Address>
+    </passenger-3>
+</passengers>
