@@ -48,7 +48,7 @@
 
             file_put_contents($file, $count + 1);
 
-            echo "<h3 class=\"col-md-8 content\">Visitor Count: " . $count . "</h3>";
+            echo "<h5 class=\"col-md-8 content\">Visitor Count: <strong>" . $count . "</strong></h5>";
             ?>
         </div>
         <!-- PHP visitor Program Ends -->
@@ -56,7 +56,7 @@
         <hr>
 
         <!-- Extra Program Starts -->
-        <h3 class="content m-b-md">File Operations</h3>
+        <h3 class="content m-b-md">File Operations - Extra Program</h3>
         <div class="row flex-center m-b-md">
 
             <?php
