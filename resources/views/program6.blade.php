@@ -71,15 +71,26 @@
                 ?>
             </div>
             <div class="col-md-11 m-b-md">
-                <?php
-                $len = strlen($data);
-                $rev = strrev($data);
+                <h4 class="content m-b-md">String Operations</h4>
+                <div class="content m-b-md">
+                    <?php
+                    $len = strlen($data);
+                    $rev = strrev($data);
+                    $low = strtolower($data);
+                    $upp = strtoupper($data);
+                    $subs = substr($data, 5);
+                    $random = str_shuffle($data);
 
-                echo "<h5 class=\"content\">Input file content length: <strong>" . $len . "</strong></h5>";
-                echo "<p class=\"content m-b-mb\"> Reversed Contents: <br><code>" . $rev . "</code></p>";
+                    echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\">Input file content length: <strong>" . $len . "</strong></h5>";
+                    echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\">Input file Lower Case: <strong>" . $low . "</strong></h5>";
+                    echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\">Input file Upper Case: <strong>" . $upp . "</strong></h5>";
+                    echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\">Input file first 5 Characters Skipped (Substring): <strong>" . $subs . "</strong></h5>";
+                    echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\">Input file random shuffle: " . $random . "</h5>";
+                    echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"> Reversed Contents: <code>" . $rev . "</code></h5>";
 
-                file_put_contents($infile, $len . "\n" . $rev)
-                ?>
+                    file_put_contents($infile, $len . "\n" . $low . "\n" . $upp . "\n" . $subs . "\n" . $random . "\n" . $rev)
+                    ?>
+                </div>
             </div>
         </div>
         <!-- Extra Program Ends -->
