@@ -54,7 +54,7 @@ passengers {
     padding-bottom: 1vh;
 }
 
-passenger-1, passenger-2, passenger-3 {
+passenger-1, passenger-2, passenger-3, passenger-4, passenger-5 {
     margin: 4%;
     float: left;
     width: 20%;
@@ -72,6 +72,16 @@ passenger-2 {
 
 passenger-3 {
     border: 5px solid darkgoldenrod;
+}
+
+passenger-4 {
+    border: 5px solid darkred;
+    margin-left: 15%;
+}
+
+passenger-5 {
+    border: 5px solid darkmagenta;
+    margin-left: 15%;
 }
 
 Airlines {

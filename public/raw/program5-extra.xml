@@ -6,7 +6,7 @@
         <Airlines>Emirates</Airlines>
         <Passport>0310991234</Passport>
         <Visa>R0310991</Visa>
-        <Address>Kerala</Address>
+        <Address>Palakkad</Address>
     </passenger-1>
 
     <passenger-2>
@@ -24,4 +24,20 @@
         <Visa>A0909991</Visa>
         <Address>Coimbatore</Address>
     </passenger-3>
+
+    <passenger-4>
+        <Name>Rahul Dev Rajesh</Name>
+        <Airlines>Indian Airways</Airlines>
+        <Passport>9632548170</Passport>
+        <Visa>R0202153</Visa>
+        <Address>Kochi</Address>
+    </passenger-4>
+
+    <passenger-5>
+        <Name>Shubham Goyal</Name>
+        <Airlines>Air Asia</Airlines>
+        <Passport>7415896302</Passport>
+        <Visa>S025001</Visa>
+        <Address>Odisha</Address>
+    </passenger-5>
 </passengers>
