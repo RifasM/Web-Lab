@@ -38,3 +38,7 @@ Route::get('/program5', function () {
 Route::get('/program6', function () {
     return view('program6');
 });
+
+Route::get('/program7', function () {
+    return view('program7');
+});

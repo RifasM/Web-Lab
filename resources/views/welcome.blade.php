@@ -23,6 +23,7 @@
         <a href="{{ url('program4')  }}">Program 4</a>
         <a href="{{ url('program5')  }}">Program 5</a>
         <a href="{{ url('program6')  }}">Program 6</a>
+        <a href="{{ url('program7')  }}">Program 7</a>
     </div>
 </div>
 
