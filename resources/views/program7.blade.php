@@ -29,8 +29,9 @@
 
         <!-- Additional Date Time Formats Starts -->
         <div class="row flex-center m-b-md">
-            <h3 class="content m-b-md">Additional Date Formats</h3>
-            <div class="col-md-10 m-b-md">
+
+            <div class="col-md-5 m-b-md">
+                <h3 class="content m-b-md">Additional Date Formats</h3>
                 <?php
                 echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Date</strong>: " . date("l, F dS, Y") . "</h5>";
                 echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Short Date</strong>: " . date("D, jS-M-y") . "</h5>";
@@ -41,6 +42,29 @@
                 echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Short Time</strong>: " . date("g : i a") . "</h5>";
                 echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Time 24 Hour</strong>: " . date("H : i : s e") . "</h5>";
                 ?>
+            </div>
+
+            <div class="col-md-12 m-b-md">
+                <h3 class="content">Extra Program</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="content m-b-md">Extra Program - Date</h3>
+                        <?php
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Date Format 1</strong>: " . date("d / m / Y") . "</h5>";
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Date Format 2</strong>: " . date("d - m - Y") . "</h5>";
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Date Format 3</strong>: " . date("d . m . Y") . "</h5>";
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Date Format 4</strong>: " . date("d . M . Y / D") . "</h5>";
+                        ?>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="content m-b-md">Extra Program - Time</h3>
+                        <?php
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Time Format 1</strong>: " . date("h : i : s") . "</h5>";
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Time Format 2</strong>: " . date("M , d , Y  h : i : s A") . "</h5>";
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb\"><strong>Time Format 3</strong>: " . date("h : i a") . "</h5>";
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Additional Date Time Formats Ends -->
