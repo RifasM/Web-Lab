@@ -82,6 +82,34 @@
         </div>
         <!-- PHP regex Program Ends -->
 
+        <hr>
+
+        <!-- USN extra Program Starts -->
+        <div class="row flex-center m-b-md">
+            <div class="col-md-5 m-b-md">
+                <h3 class="content m-b-md">USN validator</h3>
+                <form method="POST">
+                    @csrf
+                    <div class="form-group m-b-md" style="text-align: left;">
+                        <label for="usn">Enter USN:</label>
+                        <input placeholder="USN" type="text" id="usn" class="form-control m-b-md" name="usn" required>
+                    </div>
+                    <input type="submit" class="btn btn-outline-primary m-b-md" name="check" value="Check">
+                </form>
+
+                <?php
+                if (isset($_POST["check"])) {
+                    $usn = $_POST["usn"];
+                    if (preg_match("/[1-4][A-Z]{2}\d{2}[A-Z]{2}\d{3}/", $usn))
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb text-success\">USN: <small>" . $usn . "</small> is Valid</h5>";
+                    else
+                        echo "<h5 style=\"text-align: left; margin-left: 20%;\" class=\"m-b-mb text-warning\">USN: <small>" . $usn . "</small> is Invalid</h5>";
+                }
+                ?>
+            </div>
+        </div>
+        <!-- USN extra Program Ends -->
+
     </div>
 
 @endsection
