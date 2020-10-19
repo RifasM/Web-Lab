@@ -17,8 +17,8 @@
                         </li>
                         <li>
                             Search for a word in states that begins with k and ends in s. Perform a case insensitive
-                            comparison. [Note: Passing re.Ias a second parameter to method compile performs a
-                            case-insensitive comparison.] Store this word in element1 of statesList.
+                            comparison. [Note: Passing re.I as a second parameter to method compile performs a
+                            case-insensitive comparison.] Store this word in element 1 of statesList.
                         </li>
                         <li>
                             Search for a word in states that begins with M and ends in s. Store this word in element 2
@@ -75,8 +75,8 @@
                 }
 
                 echo "<h5>The modified Array is:</h5> <br>";
-                foreach ($statesList as $key => $value)
-                    print("<strong>stateList[$key]</strong> : <code>$value</code><br>");
+                foreach (array_values($statesList) as $i => $value)
+                    print("<strong>stateList[$i]</strong> : <code>$value</code><br>");
                 ?>
             </div>
         </div>
