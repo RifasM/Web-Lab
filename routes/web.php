@@ -46,3 +46,7 @@ Route::get('/program7', function () {
 Route::any('/program8', function () {
     return view('program8');
 });
+
+Route::get('/program9', function () {
+    return view('program9');
+});
