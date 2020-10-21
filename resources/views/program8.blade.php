@@ -203,6 +203,10 @@
                     $in = 0.39370078;
                     $mi = 0.000006213;
                     $ya = 0.010936132;
+                    $nm = 0.00000539956;
+                    $mm = 10;
+                    $Mm = 10000;
+                    $Nm = 1e+7;
                     break;
                 case 2:
                     $cm = 100;
@@ -212,6 +216,10 @@
                     $in = 39.370078;
                     $mi = 0.00062137;
                     $ya = 1.0936132;
+                    $nm = 0.000539957;
+                    $mm = 1000;
+                    $Mm = 1e+6;
+                    $Nm = 1e+9;
                     break;
                 case 3:
                     $cm = 100000;
@@ -221,6 +229,10 @@
                     $in = 39370.078;
                     $mi = 0.6213;
                     $ya = 1093.6132;
+                    $nm = 0.539957;
+                    $mm = 1e+6;
+                    $Mm = 1e+9;
+                    $Nm = 1e+12;
                     break;
                 case 4:
                     $cm = 30.48;
@@ -230,6 +242,10 @@
                     $in = 12;
                     $mi = 0.00018939;
                     $ya = 0.33333;
+                    $nm = 0.0001645788936;
+                    $mm = 304.8;
+                    $Mm = 25400;
+                    $Nm = 3.048e+8;
                     break;
                 case 5:
                     $cm = 2.54;
@@ -239,6 +255,10 @@
                     $in = 1;
                     $mi = 0.0000157828;
                     $ya = 0.027778;
+                    $nm = 0.00001371497;
+                    $mm = 25.4;
+                    $Mm = ;
+                    $Nm = 2.54e+7;
                     break;
                 case 6:
                     $cm = 160934.4;
@@ -248,6 +268,10 @@
                     $in = 63360;
                     $mi = 1;
                     $ya = 1760;
+                    $nm = 0.868976;
+                    $mm = 1.609e+6;
+                    $Mm = 1.609e+9;
+                    $Nm = 1.609e+12;
                     break;
                 case 7:
                     $cm = 91.44;
@@ -257,6 +281,62 @@
                     $in = 36;
                     $mi = 0.000568181;
                     $ya = 1;
+                    $nm = 0.0004937363636384837;
+                    $mm = 914.4;
+                    $Mm = 914400;
+                    $Nm = 9.144e+8;
+                    break;
+                case 8:
+                    $cm = 185200;
+                    $me = 1852;
+                    $km = 1.852;
+                    $ft = 6076.12;
+                    $in = 72913.4;
+                    $mi = 1.15078;
+                    $ya = 2025.37;
+                    $nm = 1;
+                    $mm = 1.852e+6;
+                    $Mm = 1.852e+9;
+                    $Nm = 1.852e+12;
+                    break;
+                case 9:
+                    $cm = 10;
+                    $me = 0.01;
+                    $km = 1e-5;
+                    $ft = 0.0328084;
+                    $in = 0.393701;
+                    $mi = 6.2137e-6;
+                    $ya = 0.0109361;
+                    $nm = 5.39956803e-7;
+                    $mm = 1;
+                    $Mm = 1000;
+                    $Nm = 1e+6;
+                    break;
+                case 10:
+                    $cm = 10000;
+                    $me = 1e+6;
+                    $km = 1e+9;
+                    $ft = 304800;
+                    $in = 25400;
+                    $mi = 1.609e+9;
+                    $ya = 914400;
+                    $nm = 5.3996e-10;
+                    $mm = 0.001;
+                    $Mm = 1;
+                    $Nm = 1000;
+                    break;
+                case 11:
+                    $cm = 1e+7;
+                    $me = 1e+9;
+                    $km = 1e+12;
+                    $ft = 3.048e+8;
+                    $in = 2.54e+7;
+                    $mi = 1.609e+12;
+                    $ya = 9.144e+8;
+                    $nm = 5.3996e-13
+                    $mm = 1e-6;
+                    $Mm = 0.001;
+                    $Nm = 1;
                     break;
             }
 
@@ -284,6 +364,18 @@
                 case 7:
                     $res = $from * $ya;
                     break;
+                case 8:
+                    $res = $from * $nm;
+                    break;
+                case 9:
+                    $res = $from * $mm;
+                    break;
+                case 10:
+                    $res = $from * $Mm;
+                    break;
+                case 11:
+                    $res = $from * $Nm;
+                    break;
             }
         }
         ?>
@@ -310,6 +402,10 @@
                                 <option value=5>Inch</option>
                                 <option value=6>Miles</option>
                                 <option value=7>Yards</option>
+                                <option value=8>Nautical Miles</option>
+                                <option value=9>Millimeter</option>
+                                <option value=10>Micrometer</option>
+                                <option value=11>Nanometer</option>
                             </select>
                         </div>
                     </div>
@@ -332,6 +428,10 @@
                                 <option value=5>Inch</option>
                                 <option value=6>Miles</option>
                                 <option value=7>Yards</option>
+                                <option value=8>Nautical Miles</option>
+                                <option value=9>Millimeter</option>
+                                <option value=10>Micrometer</option>
+                                <option value=11>Nanometer</option>
                             </select>
                             <script>
                                 document.getElementById("from_drop").value = <?php echo isset($from_drop) ? $from_drop : 1; ?>;
