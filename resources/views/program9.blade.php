@@ -1,12 +1,12 @@
 @extends('layout')
 
-@section('title', 'Program 6')
+@section('title', 'Program 9')
 
 @section('main-content')
     <div class="content">
         <div class="row flex-center m-b-md">
             <div class="col-md-11 m-b-md">
-                <div class="title content">Program 6</div>
+                <div class="title content">Program 9</div>
                 <h3 class="content m-b-md" style="text-align: left;">Aim: Write a PHP program named states.php that
                     declares a variable states with value "Mississippi Alabama Texas Massachusetts Kansas". write a PHP
                     program that does the following:
@@ -76,7 +76,7 @@
 
                 echo "<h5>The modified Array is:</h5> <br>";
                 foreach (array_values($statesList) as $i => $value)
-                    print("<strong>stateList[$i]</strong> : <code>$value</code><br>");
+                    print("<strong>statesalList[$i]</strong> : <code>$value</code><br>");
                 ?>
             </div>
         </div>
