@@ -186,6 +186,165 @@
         </div>
         <!-- Array program Ends -->
 
+        <hr>
+
+        <!-- length conversion program starts -->
+        <?php
+        if (isset($_POST["from"])) {
+            $from = $_POST["from"];
+            $from_drop = $_POST["from_drop"];
+            $to_drop = $_POST["to_drop"];
+            switch ($from_drop) {
+                case 1:
+                    $cm = 1;
+                    $me = 0.01;
+                    $km = 0.00001;
+                    $ft = 0.3280839;
+                    $in = 0.39370078;
+                    $mi = 0.000006213;
+                    $ya = 0.010936132;
+                    break;
+                case 2:
+                    $cm = 100;
+                    $me = 1;
+                    $km = 0.001;
+                    $ft = 3.280839;
+                    $in = 39.370078;
+                    $mi = 0.00062137;
+                    $ya = 1.0936132;
+                    break;
+                case 3:
+                    $cm = 100000;
+                    $me = 1000;
+                    $km = 1;
+                    $ft = 3280.839;
+                    $in = 39370.078;
+                    $mi = 0.6213;
+                    $ya = 1093.6132;
+                    break;
+                case 4:
+                    $cm = 30.48;
+                    $me = 0.3048;
+                    $km = 0.0003048;
+                    $ft = 1;
+                    $in = 12;
+                    $mi = 0.00018939;
+                    $ya = 0.33333;
+                    break;
+                case 5:
+                    $cm = 2.54;
+                    $me = 0.0254;
+                    $km = 0.0000254;
+                    $ft = 0.083333;
+                    $in = 1;
+                    $mi = 0.0000157828;
+                    $ya = 0.027778;
+                    break;
+                case 6:
+                    $cm = 160934.4;
+                    $me = 1609.344;
+                    $km = 1.609344;
+                    $ft = 5280;
+                    $in = 63360;
+                    $mi = 1;
+                    $ya = 1760;
+                    break;
+                case 7:
+                    $cm = 91.44;
+                    $me = 0.9144;
+                    $km = 0.0009144;
+                    $ft = 3;
+                    $in = 36;
+                    $mi = 0.000568181;
+                    $ya = 1;
+                    break;
+            }
+
+            $res = 0;
+
+            switch ($to_drop) {
+                case 1:
+                    $res = $from * $cm;
+                    break;
+                case 2:
+                    $res = $from * $me;
+                    break;
+                case 3:
+                    $res = $from * $km;
+                    break;
+                case 4:
+                    $res = $from * $ft;
+                    break;
+                case 5:
+                    $res = $from * $in;
+                    break;
+                case 6:
+                    $res = $from * $mi;
+                    break;
+                case 7:
+                    $res = $from * $ya;
+                    break;
+            }
+        }
+        ?>
+
+        <form method="post">
+            @csrf
+            <h3 class="content m-b-md">Extra Program - Type Conversion</h3>
+            <div class="row flex-center m-b-md">
+                <div class="col-md-6 m-b-md" style="text-align: left;">
+                    <label for="from">Input Value:</label>
+                    <label for="from_drop"></label>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input type="number" class="form-control m-b-md"
+                                   value="<?php echo isset($from) ? $from : ''; ?>" id="from" name="from"
+                                   placeholder="Input Value">
+                        </div>
+                        <div class="col-md-5">
+                            <select class="form-control" id="from_drop" name="from_drop">
+                                <option value=1>Centimeter</option>
+                                <option value=2>Meter</option>
+                                <option value=3>Kilometer</option>
+                                <option value=4>Feet</option>
+                                <option value=5>Inch</option>
+                                <option value=6>Miles</option>
+                                <option value=7>Yards</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 m-b-md" style="text-align: left;">
+                    <label for="to">Converted Value:</label>
+                    <label for="to_drop"></label>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input type="number" class="form-control m-b-md" disabled id="to"
+                                   value="<?php echo isset($res) ? $res : ''; ?>" name="to" placeholder="Converted">
+                        </div>
+                        <div class="col-md-5">
+                            <select class="form-control" id="to_drop" name="to_drop">
+                                <option value=1>Centimeter</option>
+                                <option value=2>Meter</option>
+                                <option value=3>Kilometer</option>
+                                <option value=4>Feet</option>
+                                <option value=5>Inch</option>
+                                <option value=6>Miles</option>
+                                <option value=7>Yards</option>
+                            </select>
+                            <script>
+                                document.getElementById("from_drop").value = <?php echo isset($from_drop) ? $from_drop : 1; ?>;
+                                document.getElementById("to_drop").value = <?php echo isset($to_drop) ? $to_drop : 1; ?>;
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-outline-info m-b-md" value="Convert">
+        </form>
+        <!-- length conversion program ends -->
+
     </div>
 
 @endsection
