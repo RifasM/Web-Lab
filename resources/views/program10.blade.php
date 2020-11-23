@@ -24,7 +24,11 @@
                  * SQL Queries
                  *
                  * create table student (usn varchar(10), name varchar(20), batch int(10));
-                 *
+                 * insert into student values("1CR17CS075", "Mohammed Rifas S", 2017);
+                 * insert into student values("1CR17EC029", "Anushka Jemima", 2017);
+                 * insert into student values("1CR17CS029", "Burla Sai Teja", 2017);
+                 * insert into student values("1CR17CS094", "Rahul Majgi", 2015);
+                 * insert into student values("1CR17ME090", "Rahul Dev R", 2016);
 
                  */
 
