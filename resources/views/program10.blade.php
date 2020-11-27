@@ -121,6 +121,72 @@
         </div>
         <!-- Student Record Program Ends -->
 
+        <!-- Extra program starts -->
+        <div class="row flex-center m-b-md">
+            <div class="col-md-6 m-b-md">
+                <h3 class="content">Extra Program - Student Record Search</h3>
+
+                <form class="col-md-8 m-b-md" method="post">
+                    @csrf
+                    <div class="form-group m-b-md" style="text-align: left;">
+                        <label for="name">Enter Student Name:</label>
+                        <input type="text" id="name" name="name" class="form-control m-b-md" placeholder="Student Name"
+                               required>
+                    </div>
+                    <input type="submit" class="btn btn-primary m-b-md" name="submit" value="Submit">
+                </form>
+
+                <?php
+                if (isset($_POST["submit"])) {
+                $name = $_POST["name"];
+
+                $l_name = strtolower($name);
+                $sql = "SELECT * FROM student WHERE LOWER(name) LIKE '%$l_name%'";
+
+
+                $conn = mysqli_connect($server, $username, $password, $dbname, $port);
+
+                if ($conn->connect_error)
+                die("Connection failed: " . $conn->connect_error);
+                else{
+                $result = $conn->query($sql);
+                ?>
+                <h5 class="content m-b-md">
+                    <?php
+                    echo "Search results for $name";
+                    ?>
+                </h5>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col">USN</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Batch</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row["usn"] . "</td>";
+                            echo "<td>" . $row["name"] . "</td>";
+                            echo "<td>" . $row["batch"] . "</td>";
+                            echo "</tr>";
+                        }
+                    } else
+                        echo "<tr><td colspan='3'>Empty Records</td></tr>";
+                    ?>
+                    </tbody>
+                </table>
+                <?php
+                }
+                }
+                ?>
+            </div>
+        </div>
+        <!-- Extra program ends -->
+
     </div>
 
 @endsection

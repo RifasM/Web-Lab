@@ -51,6 +51,6 @@ Route::any('/program9', function () {
     return view('program9');
 });
 
-Route::get('/program10', function () {
+Route::any('/program10', function () {
     return view('program10');
 });
